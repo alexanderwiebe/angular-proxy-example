@@ -19,6 +19,6 @@ export class AppComponent {
   }
 
   getTitle2() {
-    this.title.getTitle1().subscribe((newTitle) => (this.title2 = newTitle));
+    this.title.getTitle2().subscribe((newTitle) => (this.title2 = newTitle));
   }
 }
