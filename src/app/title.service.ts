@@ -8,10 +8,14 @@ export class TitleService {
   constructor(private http: HttpClient) {}
 
   getTitle1() {
-    return this.http.get('http://localhost:3001');
+    return this.http.get('/api1/');
   }
 
   getTitle2() {
-    return this.http.get('http://localhost:3002');
+    return this.http.get('/api2/');
+  }
+
+  getTitle3() {
+    return this.http.get('/asdf');
   }
 }
